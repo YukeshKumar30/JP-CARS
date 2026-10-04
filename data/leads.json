@@ -1,0 +1,76 @@
+[
+  {
+    "id": "lead-1",
+    "type": "vehicle_enquiry",
+    "name": "Saravanan Natarajan",
+    "phone": "+91 99441 55678",
+    "email": "saravanan.n@gmail.com",
+    "vehicle_id": "demo-1",
+    "vehicle_title": "2022 Maruti Suzuki Swift VXI",
+    "message": "Is the Swift single owner and accident free? Can I inspect it tomorrow at your showroom?",
+    "status": "new",
+    "created_at": "2026-09-30T15:16:24.406Z",
+    "updated_at": "2026-09-30T15:16:24.406Z"
+  },
+  {
+    "id": "lead-2",
+    "type": "test_drive",
+    "name": "Deepak Raj",
+    "phone": "+91 98410 99887",
+    "email": "deepak.raj92@yahoo.com",
+    "vehicle_id": "demo-2",
+    "vehicle_title": "2021 Hyundai Creta SX Diesel",
+    "message": "Requested test drive on Saturday morning around 10:30 AM.",
+    "status": "contacted",
+    "created_at": "2026-09-30T12:01:24.406Z",
+    "updated_at": "2026-09-30T14:01:24.406Z"
+  },
+  {
+    "id": "lead-3",
+    "type": "finance",
+    "name": "Ramesh Kumar",
+    "phone": "+91 98401 23456",
+    "email": "ramesh.k@gmail.com",
+    "vehicle_id": "demo-2",
+    "vehicle_title": "2021 Hyundai Creta SX Diesel",
+    "message": "Wants to know maximum loan tenure and bank interest rates for Creta.",
+    "status": "follow_up",
+    "created_at": "2026-09-30T09:01:24.406Z",
+    "updated_at": "2026-09-30T13:01:24.406Z"
+  },
+  {
+    "id": "lead-4",
+    "type": "sell_car",
+    "name": "Muthu Velu",
+    "phone": "+91 94440 12345",
+    "email": "muthu.velu@gmail.com",
+    "message": "Want to sell 2018 Honda Amaze Diesel (Manual, 62,000 km, 1st Owner). Need valuation.",
+    "status": "contacted",
+    "created_at": "2026-09-29T20:01:24.406Z",
+    "updated_at": "2026-09-30T08:01:24.406Z"
+  },
+  {
+    "id": "lead-5",
+    "type": "general",
+    "name": "Kavitha Sundar",
+    "phone": "+91 97911 34567",
+    "email": "kavitha.s@gmail.com",
+    "message": "Looking for automatic hatchbacks under ₹6 Lakhs for daily city commute in Kallakurichi.",
+    "status": "new",
+    "created_at": "2026-09-29T12:01:24.406Z",
+    "updated_at": "2026-09-29T12:01:24.406Z"
+  },
+  {
+    "id": "lead-6",
+    "type": "vehicle_enquiry",
+    "name": "Anand Venkatesh",
+    "phone": "+91 98845 67890",
+    "email": "anand.v@gmail.com",
+    "vehicle_id": "demo-3",
+    "vehicle_title": "2020 Honda City VX CVT",
+    "message": "Is negotiation possible on Honda City price? Ready with immediate payment.",
+    "status": "completed",
+    "created_at": "2026-09-28T14:01:24.406Z",
+    "updated_at": "2026-09-29T16:01:24.406Z"
+  }
+]

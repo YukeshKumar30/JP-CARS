@@ -1,0 +1,42 @@
+[
+  {
+    "id": "rev-1",
+    "customer_name": "Aravind Swaminathan",
+    "rating": 5,
+    "comment": "Bought my 2021 Hyundai Creta from JP CARS. Very honest disclosure about previous owner and service history. RC transfer was handled smoothly in just 10 days.",
+    "vehicle_id": "demo-2",
+    "vehicle_title": "2021 Hyundai Creta SX Diesel",
+    "is_published": true,
+    "created_at": "2026-09-23T16:02:04.384Z"
+  },
+  {
+    "id": "rev-2",
+    "customer_name": "Dr. K. Chandrasekar",
+    "rating": 5,
+    "comment": "Best pre-owned car dealer in Kallakurichi region. The vehicle condition is exactly as shown on the website. No hidden charges or commission surprises.",
+    "vehicle_id": "demo-3",
+    "vehicle_title": "2020 Honda City VX CVT",
+    "is_published": true,
+    "created_at": "2026-09-16T16:02:04.384Z"
+  },
+  {
+    "id": "rev-3",
+    "customer_name": "Prakash Rajendran",
+    "rating": 5,
+    "comment": "Sold my old Swift and bought an Innova Crysta. Got the highest evaluation price compared to online portals. Very polite and professional staff.",
+    "vehicle_id": "demo-5",
+    "vehicle_title": "2019 Toyota Innova Crysta 2.4 VX",
+    "is_published": true,
+    "created_at": "2026-09-09T16:02:04.384Z"
+  },
+  {
+    "id": "rev-4",
+    "customer_name": "Subhashree Natarajan",
+    "rating": 4,
+    "comment": "Finance process was fast through Cholamandalam Finance arranged by JP CARS. Received car delivery on auspicious day with full tank and detailed wash.",
+    "vehicle_id": "demo-1",
+    "vehicle_title": "2022 Maruti Suzuki Swift VXI",
+    "is_published": true,
+    "created_at": "2026-08-31T16:02:04.384Z"
+  }
+]

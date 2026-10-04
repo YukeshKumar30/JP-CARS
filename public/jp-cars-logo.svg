@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 220" width="100%" height="100%">
+  <!-- Definitions for gradients and filters -->
+  <defs>
+    <linearGradient id="carBodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f1f38" />
+      <stop offset="50%" stop-color="#182d4d" />
+      <stop offset="100%" stop-color="#0f1f38" />
+    </linearGradient>
+    <linearGradient id="redTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c61b24" />
+      <stop offset="50%" stop-color="#dc242d" />
+      <stop offset="100%" stop-color="#c61b24" />
+    </linearGradient>
+    <linearGradient id="headlightGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+  </defs>
+
+  <!-- ================= CAR GRAPHIC ================= -->
+  <g id="car-silhouette" transform="translate(0, 4)">
+    <!-- Wheels/Tires outer silhouette -->
+    <path d="M 112 60 C 110 60 109 63 109 67 C 109 72 110 75 113 77 C 114 77 115 76 115 73 L 115 63 C 115 61 114 60 112 60 Z" fill="#0c1729" />
+    <path d="M 228 60 C 230 60 231 63 231 67 C 231 72 230 75 227 77 C 226 77 225 76 225 73 L 225 63 C 225 61 226 60 228 60 Z" fill="#0c1729" />
+
+    <!-- Side Mirrors -->
+    <!-- Left mirror -->
+    <path d="M 124 38 C 116 35 113 40 119 44 C 122 45 125 43 126 41 Z" fill="#13243f" stroke="#0b1628" stroke-width="1.2" />
+    <path d="M 124 39 C 121 38 118 41 121 43" stroke="#38bdf8" stroke-width="0.8" fill="none" opacity="0.7" />
+    <!-- Right mirror -->
+    <path d="M 216 38 C 224 35 227 40 221 44 C 218 45 215 43 214 41 Z" fill="#13243f" stroke="#0b1628" stroke-width="1.2" />
+    <path d="M 216 39 C 219 38 222 41 219 43" stroke="#38bdf8" stroke-width="0.8" fill="none" opacity="0.7" />
+
+    <!-- Main Roof & Windshield Frame -->
+    <!-- Roof Arc -->
+    <path d="M 137 28 C 146 22 194 22 203 28 C 210 33 218 46 222 53 C 225 56 222 57 217 57 C 210 57 190 59 170 59 C 150 59 130 57 123 57 C 118 57 115 56 118 53 C 122 46 130 33 137 28 Z" fill="#0f1f38" stroke="#0b1628" stroke-width="1.5" />
+
+    <!-- Windshield Glass -->
+    <path d="M 140 29 C 148 24 192 24 200 29 C 206 34 213 45 216 51 C 205 52 188 53 170 53 C 152 53 135 52 124 51 C 127 45 134 34 140 29 Z" fill="#091222" />
+    
+    <!-- Windshield Reflection Glare -->
+    <path d="M 144 30 L 132 49 L 140 49 L 152 30 Z" fill="#ffffff" opacity="0.12" />
+    <path d="M 158 29 L 149 49 L 153 49 L 162 29 Z" fill="#ffffff" opacity="0.08" />
+
+    <!-- Rearview Mirror inside -->
+    <rect x="167" y="30" width="6" height="3" rx="1" fill="#475569" opacity="0.8" />
+
+    <!-- Hood & Front Fenders -->
+    <path d="M 116 53 C 123 54 135 55 170 55 C 205 55 217 54 224 53 C 227 54 229 57 228 62 C 227 67 225 73 222 75 C 215 78 195 81 170 81 C 145 81 125 78 118 75 C 115 73 113 67 112 62 C 111 57 113 54 116 53 Z" fill="url(#carBodyGrad)" stroke="#0b1628" stroke-width="1.2" />
+
+    <!-- Hood Sculpt Lines (Left & Right Creases) -->
+    <path d="M 142 54 C 145 59 152 68 156 71" stroke="#253a5e" stroke-width="1.4" fill="none" stroke-linecap="round" />
+    <path d="M 198 54 C 195 59 188 68 184 71" stroke="#253a5e" stroke-width="1.4" fill="none" stroke-linecap="round" />
+
+    <!-- Sleek Angular Headlights -->
+    <!-- Left Headlight -->
+    <path d="M 121 57 C 127 57 137 60 142 63 C 137 65 127 66 120 63 C 118 61 118 58 121 57 Z" fill="#f8fafc" stroke="#334155" stroke-width="1" />
+    <path d="M 123 58 C 128 58 135 60 139 62" stroke="#38bdf8" stroke-width="1.2" fill="none" stroke-linecap="round" />
+    <!-- Right Headlight -->
+    <path d="M 219 57 C 213 57 203 60 198 63 C 203 65 213 66 220 63 C 222 61 222 58 219 57 Z" fill="#f8fafc" stroke="#334155" stroke-width="1" />
+    <path d="M 217 58 C 212 58 205 60 201 62" stroke="#38bdf8" stroke-width="1.2" fill="none" stroke-linecap="round" />
+
+    <!-- Center Hood Emblem Notch -->
+    <ellipse cx="170" cy="65" rx="3.5" ry="2" fill="#c61b24" />
+
+    <!-- Lower Grille & Bumper Structure -->
+    <path d="M 146 72 C 154 74 186 74 194 72 C 197 76 195 78 190 79 C 180 81 160 81 150 79 C 145 78 143 76 146 72 Z" fill="#070d18" stroke="#1b2a4a" stroke-width="1" />
+    
+    <!-- Grille Honeycomb / Horizontal slats -->
+    <line x1="150" y1="75" x2="190" y2="75" stroke="#334155" stroke-width="0.8" />
+    <line x1="153" y1="77.5" x2="187" y2="77.5" stroke="#334155" stroke-width="0.8" />
+
+    <!-- Lower Lip / Front Splitter -->
+    <path d="M 120 74 C 132 79 170 82 220 74 C 222 76 221 78 217 79 C 195 84 145 84 123 79 C 119 78 118 76 120 74 Z" fill="#0b1628" />
+
+    <!-- Fog Light Accent Vents -->
+    <path d="M 124 67 L 131 69 L 129 73 L 122 70 Z" fill="#0a1220" />
+    <path d="M 216 67 L 209 69 L 211 73 L 218 70 Z" fill="#0a1220" />
+    <circle cx="127" cy="70" r="1.2" fill="#38bdf8" opacity="0.9" />
+    <circle cx="213" cy="70" r="1.2" fill="#38bdf8" opacity="0.9" />
+  </g>
+
+  <!-- ================= TYPOGRAPHY ================= -->
+
+  <!-- 1. "JP CARS" (Bold Red Automotive Sans-Serif) -->
+  <text 
+    x="170" 
+    y="136" 
+    fill="url(#redTextGrad)" 
+    font-family="'Montserrat', 'Arial Black', 'Trebuchet MS', 'Impact', sans-serif" 
+    font-size="44" 
+    font-weight="900" 
+    letter-spacing="2.5" 
+    text-anchor="middle"
+  >JP CARS</text>
+
+  <!-- 2. "PRE OWNED CARS" (Refined Red/Orange Sub-Heading) -->
+  <text 
+    x="170" 
+    y="158" 
+    fill="#d3232d" 
+    font-family="'Montserrat', 'Arial Black', 'Helvetica Neue', sans-serif" 
+    font-size="12.5" 
+    font-weight="800" 
+    letter-spacing="5" 
+    text-anchor="middle"
+  >PRE OWNED CARS</text>
+
+  <!-- 3. "Buying  |  Selling  |  Finance" (Navy Text with Red Pipes) -->
+  <g transform="translate(0, 192)">
+    <text 
+      x="170" 
+      y="0" 
+      font-family="'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" 
+      font-size="15.5" 
+      font-weight="700" 
+      text-anchor="middle"
+    >
+      <tspan fill="#102038">Buying</tspan>
+      <tspan fill="#d3232d" font-weight="900">   |   </tspan>
+      <tspan fill="#102038">Selling</tspan>
+      <tspan fill="#d3232d" font-weight="900">   |   </tspan>
+      <tspan fill="#102038">Finance</tspan>
+    </text>
+  </g>
+</svg>

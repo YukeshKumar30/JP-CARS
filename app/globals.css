@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Custom Properties ─────────────────────────────────────────── */
+:root {
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* Colors */
+  --jp-black: #0b0b0d;
+  --jp-dark: #151518;
+  --jp-bg: #f7f7f5;
+  --jp-surface: #ffffff;
+  --jp-text: #111111;
+  --jp-muted: #6b6b6b;
+  --jp-gold: #b8860b;
+  --jp-gold-light: #d4a017;
+  --jp-blue: #1a4fad;
+  --jp-blue-light: #2563eb;
+  --jp-border: #e5e5e3;
+  --jp-border-dark: #2a2a2e;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark {
+  --jp-bg: #0b0b0d;
+  --jp-surface: #151518;
+  --jp-text: #f0f0ee;
+  --jp-muted: #9a9a9a;
+  --jp-border: #2a2a2e;
+}
+
+/* ─── Base Styles ──────────────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--jp-bg);
+  color: var(--jp-text);
+  line-height: 1.6;
+  transition: background-color var(--transition-slow), color var(--transition-slow);
+}
+
+/* ─── Typography ───────────────────────────────────────────────────── */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* ─── Scrollbar ────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d1cf;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b0b0ae;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3a3a3e;
+}
+
+/* ─── Focus styles ─────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--jp-blue-light);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ─── Selection ────────────────────────────────────────────────────── */
+::selection {
+  background: #2563eb22;
+  color: inherit;
+}
+
+/* ─── Utilities ────────────────────────────────────────────────────── */
+.jp-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .jp-container {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .jp-container {
+    padding-inline: 2.5rem;
+  }
+}
+
+/* ─── Skeleton Loader ──────────────────────────────────────────────── */
+.skeleton {
+  background: linear-gradient(90deg,
+      #f0f0ee 25%,
+      #e8e8e6 50%,
+      #f0f0ee 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 6px;
+}
+
+.dark .skeleton {
+  background: linear-gradient(90deg,
+      #1e1e22 25%,
+      #252528 50%,
+      #1e1e22 75%);
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* ─── Vehicle card hover ───────────────────────────────────────────── */
+.vehicle-card {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.vehicle-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+.vehicle-card:hover .vehicle-image {
+  transform: scale(1.02);
+}
+
+.vehicle-image {
+  transition: transform var(--transition-slow);
+}
+
+/* ─── Button base ──────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+  border-radius: 8px;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: none;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: var(--jp-black);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #1a1a1e;
+  box-shadow: var(--shadow-md);
+}
+
+.dark .btn-primary {
+  background: #ffffff;
+  color: var(--jp-black);
+}
+
+.dark .btn-primary:hover {
+  background: #f0f0ee;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--jp-text);
+  border: 1.5px solid var(--jp-border);
+}
+
+.btn-secondary:hover {
+  border-color: #aaa;
+  background: var(--jp-bg);
+}
+
+.btn-gold {
+  background: var(--jp-gold);
+  color: #ffffff;
+}
+
+.btn-gold:hover {
+  background: #9a6f09;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: #ffffff;
+}
+
+.btn-whatsapp:hover {
+  background: #1da855;
+  box-shadow: var(--shadow-md);
+}
+
+/* ─── Reduced Motion ───────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─── Input styles ─────────────────────────────────────────────────── */
+.jp-input {
+  width: 100%;
+  background: var(--jp-surface);
+  border: 1.5px solid var(--jp-border);
+  border-radius: 8px;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  color: var(--jp-text);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  font-family: var(--font-sans);
+}
+
+.jp-input:focus {
+  outline: none;
+  border-color: var(--jp-blue-light);
+  box-shadow: 0 0 0 3px #2563eb18;
+}
+
+.jp-input::placeholder {
+  color: var(--jp-muted);
+}
+
+/* ─── Section headings ─────────────────────────────────────────────── */
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--jp-gold);
+  margin-bottom: 0.75rem;
+}
+
+/* ─── Price display ────────────────────────────────────────────────── */
+.price-display {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--jp-text);
+}
+
+/* ─── Status badges ────────────────────────────────────────────────── */
+.badge-available {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge-reserved {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.badge-sold {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.dark .badge-available {
+  background: #14532d;
+  color: #86efac;
+}
+
+.dark .badge-reserved {
+  background: #713f12;
+  color: #fde047;
+}
+
+.dark .badge-sold {
+  background: #7f1d1d;
+  color: #fca5a5;
+}
+
+/* ─── Intro overlay ────────────────────────────────────────────────── */
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #0b0b0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

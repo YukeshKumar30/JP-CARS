@@ -1,0 +1,50 @@
+[
+  {
+    "id": "faq-1",
+    "question": "How do I buy a car from JP CARS?",
+    "answer": "Browse our inventory online or visit us in Kallakurichi. Select a car you like, book a test drive, and our team will assist you with the complete buying process including finance and documentation.",
+    "category": "Buying",
+    "sort_order": 1,
+    "is_published": true
+  },
+  {
+    "id": "faq-2",
+    "question": "Do you offer finance or EMI options?",
+    "answer": "Yes, we assist with vehicle financing through leading banks and NBFCs. Our team will help you understand eligibility and get the best interest rates. Approval is subject to bank criteria.",
+    "category": "Finance",
+    "sort_order": 2,
+    "is_published": true
+  },
+  {
+    "id": "faq-3",
+    "question": "Can I sell my car to JP CARS?",
+    "answer": "Absolutely. Submit your car details through our 'Sell Your Car' page and our team will evaluate it and get back to you with a fair offer.",
+    "category": "Selling",
+    "sort_order": 3,
+    "is_published": true
+  },
+  {
+    "id": "faq-4",
+    "question": "Are the vehicles inspected before listing?",
+    "answer": "Yes, every vehicle listed on JP CARS goes through a thorough inspection covering mechanical condition, exterior, interior, and documentation verification.",
+    "category": "Quality",
+    "sort_order": 4,
+    "is_published": true
+  },
+  {
+    "id": "faq-5",
+    "question": "Do you help with RC transfer?",
+    "answer": "Yes, we assist with RC transfer documentation as part of our vehicle purchase service. Our team guides you through every step.",
+    "category": "Documentation",
+    "sort_order": 5,
+    "is_published": true
+  },
+  {
+    "id": "faq-6",
+    "question": "Can I get a test drive before buying?",
+    "answer": "Yes. Book a test drive through our website or WhatsApp us directly. We'll arrange a test drive at our location in Kallakurichi.",
+    "category": "Buying",
+    "sort_order": 6,
+    "is_published": true
+  }
+]
